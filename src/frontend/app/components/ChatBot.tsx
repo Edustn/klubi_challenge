@@ -17,7 +17,7 @@ interface Message {
 
 export default function ChatBot() {
   const [messages, setMessages] = useState<Message[]>([
-    { sender: 'bot', text: 'Olá! Sou seu assistente da Klubi. Como posso te ajudar hoje?' }
+    { sender: 'bot', text: 'Olá! Sou seu assistente do Klubi. Como posso te ajudar hoje?' }
   ]);
   const [input, setInput] = useState('');
   const [car, setCar] = useState<Car | null>(null);
@@ -71,7 +71,7 @@ export default function ChatBot() {
             </span>
           </div>
         ))}
-        {loading && <p className="text-sm text-gray-500">Pensando...</p>}
+        {loading && <p className="text-sm text-zinc-950">Pensando...</p>}
       </div>
 
       <div className="flex gap-2">
@@ -79,26 +79,28 @@ export default function ChatBot() {
           type="text"
           value={input}
           onChange={(e) => setInput(e.target.value)}
-          placeholder="Digite sua dúvida sobre carros..."
-          className="flex-grow px-4 py-2 border rounded"
+          placeholder="Digite sua dúvida sobre qual carro para consórcio..."
+          className="flex-grow px-4 py-2 border text-zinc-950 rounded"
         />
-        <button onClick={handleSend} className="px-4 py-2 bg-blue-600 text-white rounded">
+        <button onClick={handleSend} className="px-4 py-2 bg-[#FBBF24] text-zinc-950 rounded">
           Enviar
         </button>
       </div>
 
       {car && (
         <div className="mt-6 border p-4 rounded-lg shadow">
-          <h2 className="text-xl font-semibold mb-2">
+          <h2 className="text-xl font-semibold mb-2 text-zinc-950">
             {car.Name} {car.Model}
           </h2>
           <img
             src={`/${car.Image}`} 
             alt={`${car.Name} ${car.Model}`}
-            className="w-full h-48 object-contain mb-2"
+            className="w-full h-48 object-contain mb-2 text-zinc-950"
           />
+          <div className='text-zinc-950'>
           <p>Preço: R$ {car.Price.toLocaleString('pt-BR')}</p>
           <p>Localização: {car.Location}</p>
+          </div>
         </div>
       )}
     </div>
