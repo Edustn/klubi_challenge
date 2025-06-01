@@ -44,11 +44,10 @@ export default function ChatBot() {
         { sender: 'bot', text: data.response }
       ]);
 
-      if (data.cars.length > 0) {
-        setCar(data.cars[0]); // Mostra só o primeiro carro relevante
-      } else {
-        setCar(null);
+      if (!car && data.cars.length > 0) {
+        setCar(data.cars[0]);
       }
+
     } catch (err) {
       setMessages((prev) => [
         ...prev,
@@ -65,8 +64,8 @@ export default function ChatBot() {
         {messages.map((msg, idx) => (
           <div key={idx} className={`mb-2 ${msg.sender === 'user' ? 'text-right' : 'text-left'}`}>
             <span className={`inline-block px-3 py-2 rounded-lg ${msg.sender === 'user'
-                ? 'bg-blue-500 text-white'  // Estilo para mensagens do usuário
-                : 'bg-gray-200  text-black'  // Estilo para mensagens do bot (agora com texto preto)
+              ? 'bg-blue-500 text-white'  
+              : 'bg-gray-200  text-black'  
               }`}>
               {msg.text}
             </span>
@@ -94,7 +93,7 @@ export default function ChatBot() {
             {car.Name} {car.Model}
           </h2>
           <img
-            src={`/${car.Image}`} // Ajuste aqui conforme o backend permitir servir imagens
+            src={`/${car.Image}`} 
             alt={`${car.Name} ${car.Model}`}
             className="w-full h-48 object-contain mb-2"
           />
