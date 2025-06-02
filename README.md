@@ -69,6 +69,12 @@ Com todos esses passos feitos verá que a aplicação irá inicializar de forma 
 
 *obs: Esses comandos foram realizados em um ambiente Linux.
 
+
+# Demonstração do Proejto
+Link para vídeos: [https://drive.google.com/drive/folders/1Fjmnl7SpflMNnXELVoOSF6t_OLlBmhED?usp=sharing](https://drive.google.com/drive/folders/1Fjmnl7SpflMNnXELVoOSF6t_OLlBmhED?usp=sharing)
+
+Nessa demonstração temos dois vídeos, um sendo quando o usuário tem o valor para pegar o carro que deseja (valor_dentro_orcamento) e outro com o usuário sem ter o valor para o carro desejado (valor_fora_orcamento).
+
 # Tecnolgias utilizadas:
 - Backend (Python e Flask)
   Para a camada de backend do projeto, foi escolhida a linguagem Python com o microframework Flask, devido à sua simplicidade, leveza e excelente desempenho em aplicações baseadas em APIs RESTful. Essa escolha foi especialmente adequada para um sistema que precisa receber requisições, processar dados de veículos e integrar-se com modelos de inteligência artificial, como o Google Generative AI (Gemini).
