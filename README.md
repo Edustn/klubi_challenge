@@ -29,9 +29,48 @@ KLUBI_CHALLENGE/
 │   │       └── tsconfig.json
 ├── requirements.txt
 ```
+# Instruções para inicialização do projeto
+
+Pré-requisitos:
+
+Python 3.10+
+
+Node.js 18+
+
+npm ou yarn
+
+Sistema operacional Linux, mas pode ser utlizado para macOS ou Windows basta conhecer os comandos para seu sistema operacional.
+
+Visual Studio Code (recomendado)
+
+1 - Clone este repositório: [https://github.com/Edustn/klubi_challenge](https://github.com/Edustn/klubi_challenge)
+
+
+2- Após isso abra o Visual Studio Code e abra o repositório clonado.
+
+
+3- Agora abra o terminal integrado do Visual Studio Code e nave até a pasta `src` e inicie um ambiente de desenvolvimento para o Python (no caso um venv) para isso digite no terminal integrado: `python3 -m venv venv`.
+
+
+4- Agora no mesmo terminal integrado que baixou o venv inicie ele com o comando: `. venv/bin/activate` e baixe as dependências deixadas no `requirements.txt` para isso digite: `pip install -r requirements.txt`.
+
+
+5- Agora navegue até a pasta `backend` e com o terminal integrado inicialize o servidor em Python através do comando: `python3 main.py`.
+
+
+6- Agora abra outro terminal e navegue até a pasta `frontend` e instale as dependências através do comando `npm i`
+
+
+7 - Após isso, navegue até a pasta `app` e inicie o projeto através do comando: `npm run dev`
+
+
+Com todos esses passos feitos verá que a aplicação irá inicializar de forma local e poderá interagir com ela sem dificuldades.
+
+
+*obs: Esses comandos foram realizados em um ambiente Linux.
 
 # Tecnolgias utilizadas:
-- Backend (Python com Flask)
+- Backend (Python e Flask)
   Para a camada de backend do projeto, foi escolhida a linguagem Python com o microframework Flask, devido à sua simplicidade, leveza e excelente desempenho em aplicações baseadas em APIs RESTful. Essa escolha foi especialmente adequada para um sistema que precisa receber requisições, processar dados de veículos e integrar-se com modelos de inteligência artificial, como o Google Generative AI (Gemini).
 
   O Flask permite uma estrutura de código enxuta, com rápida configuração inicial e boa modularização, o que favorece a manutenção e a escalabilidade do projeto. Além disso, a linguagem Python possui ampla compatibilidade com bibliotecas voltadas à IA e ao processamento de dados, facilitando a manipulação de respostas automatizadas e personalizadas para os usuários do sistema de consórcios.
