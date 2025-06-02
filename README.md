@@ -55,7 +55,7 @@ Visual Studio Code (recomendado)
 4- Agora no mesmo terminal integrado que baixou o venv inicie ele com o comando: `. venv/bin/activate` e baixe as dependências deixadas no `requirements.txt` para isso digite: `pip install -r requirements.txt`.
 
 
-5- Agora navegue até a pasta `backend` e com o terminal integrado inicialize o servidor em Python através do comando: `python3 main.py`.
+5- Agora navegue até a pasta `backend` crie um arquivo `.env` e coloque sua chave da API do Gemini (o modelo do `.env` pode ser visto em `.env.exemplo`) e com o terminal integrado inicialize o servidor em Python através do comando: `python3 main.py`.
 
 
 6- Agora abra outro terminal e navegue até a pasta `frontend` e instale as dependências através do comando `npm i`
