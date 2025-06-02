@@ -70,7 +70,7 @@ Com todos esses passos feitos verá que a aplicação irá inicializar de forma 
 *obs: Esses comandos foram realizados em um ambiente Linux.
 
 
-# Demonstração do Proejto
+# Demonstração do Projeto
 Link para vídeos: [https://drive.google.com/drive/folders/1Fjmnl7SpflMNnXELVoOSF6t_OLlBmhED?usp=sharing](https://drive.google.com/drive/folders/1Fjmnl7SpflMNnXELVoOSF6t_OLlBmhED?usp=sharing)
 
 Nessa demonstração temos dois vídeos, um sendo quando o usuário tem o valor para pegar o carro que deseja (valor_dentro_orcamento) e outro com o usuário sem ter o valor para o carro desejado (valor_fora_orcamento).
